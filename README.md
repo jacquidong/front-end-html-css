@@ -14,7 +14,7 @@ In my webpage, I have used the Box Model to add padding, margins and border deco
 Each box manipulates the elements in a different way.
 
 One way I've used the Box Model on an element is on the Side Search and Contact bar, as shown below.
-![](assets/fullBoxModel.png)
+![](assets/images/fullBoxModel.png)
 
 From the coloured guides, we can see that the content I currently have selected is blue. I used padding to generate space around the content and within the elements borders. I have used a value of 15px for padding within the whole element, which means that there will be 15px of space around the content on all four sides.
 
@@ -36,6 +36,12 @@ Sematic HTML clearly describes the meaning of the element to both the browser an
 I used the Flex Box CSS Layout which allows the webpage to be responsive and scalable. Using Flexbox allowed me to evenly distribute by elements on the page.
 
 Another element I used for a responsive layout was by using the ``@media`` tag in my CSS. This tag allowed me to specify a query which would apply CSS to the document if the media query width matched the device. 
+
+Examples below:
+
+![](assets/images/fullPage.png)
+![](assets/images/mid.png)
+![](assets/images/mobileScreen.png)
 
 ##### CSS
 
