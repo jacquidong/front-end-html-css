@@ -21,8 +21,8 @@ body {
 #content {
   display: flex;
   min-height: 100vh;
-  margin-right: 70px;
-  margin-left: 70px;
+  margin-right: 150px;
+  margin-left: 150px;
   justify-content: center;
 }
 
@@ -85,7 +85,7 @@ h3 {
 
 /*Side bar styling*/
 .sideBar h2 {
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: founders-grotesk-bold, serif;
 }
 
