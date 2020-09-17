@@ -1,6 +1,18 @@
-* {
-  box-sizing: border-box;
+@font-face {
+  font-family: founders-grotesk-bold;
+  src: url('assets/fonts/founders-grotesk-test-bold.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
 }
+
+@font-face {
+  font-family: founders-grotesk-regular-italic;
+  src: url('assets/fonts/founders-grotesk-test-regular-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
 body {
   margin: 0;
 }
@@ -14,14 +26,17 @@ body {
 /* Sub content*/
 #content > article {
   flex: 1;
-}
-#content > nav{
-  flex: 0 0 20vw;
   background-color: #f7f6f0;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+
+#content > aside {
+  flex: 0 0 20vw;
   order: -1;
 }
 
-header, article, nav {
+header, article, aside {
   padding: 1em;
 }
 
@@ -29,4 +44,32 @@ header {
   background-color: #f5efe4;
   height: 9vh;
   text-align: center;
+}
+
+.mainHouseImg img {
+  height: 40vw;
+  width: auto;
+  align-content: center;
+  border-radius: 30px;
+}
+
+h1{
+  font-size: 35px;
+  font-family: founders-grotesk-bold, serif;
+}
+
+h2{
+  font-size: 60px;
+  font-family: founders-grotesk-bold, serif;
+  margin-bottom: 0;
+}
+
+h3{
+  margin-top: 0;
+  font-family: founders-grotesk-regular-italic, serif;
+}
+
+.collection1{
+  padding-left: 3vw;
+
 }
