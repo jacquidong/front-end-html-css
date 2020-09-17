@@ -1,0 +1,162 @@
+/* Custom Fonts*/
+@font-face {
+  font-family: founders-grotesk-bold;
+  src: url('assets/fonts/founders-grotesk-test-bold.woff') format('woff');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: founders-grotesk-regular-italic;
+  src: url('assets/fonts/founders-grotesk-test-regular-italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+}
+
+/* Main Content */
+#content {
+  display: flex;
+  min-height: 100vh;
+  margin-right: 150px;
+  margin-left: 150px;
+  justify-content: center;
+}
+
+/* Main content*/
+#content > article {
+  align-content: center;
+  border-radius: 20px;
+  margin: 10px 10px 0;
+  padding: 0 4px;
+}
+
+/*Side content*/
+#content > aside {
+  /*margin-block-start: 0.83em;*/
+  flex: 0 0 20vw;
+  order: -1;
+  background-color: #ededed;
+  border-radius: 20px;
+  margin: 75px 10px 30px 10px;
+
+}
+
+header, article, aside {
+  padding: 1em;
+}
+
+header {
+  background-color: #476347;
+  height: 9vh;
+  text-align: center;
+  align-content: center;
+}
+
+/*Home page image styling*/
+.homeImg img {
+  height: auto;
+  width: 100%;
+  align-content: center;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+header h2 {
+  font-size: 30px;
+  color: white;
+  font-family: founders-grotesk-bold, serif;
+}
+
+/*Header text styling*/
+h1 {
+  font-size: 5vw;
+  font-family: founders-grotesk-bold, serif;
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: 0;
+  font-family: founders-grotesk-regular-italic, serif;
+}
+
+/*Side bar styling*/
+.sideBar h2 {
+  font-size: 2vw;
+  font-family: founders-grotesk-bold, serif;
+}
+
+.sideBar input {
+  font-family: founders-grotesk-regular-italic, serif;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 100%;
+  border: none;
+  height: 40px;
+  margin-top: 0;
+
+}
+
+/* Responsive Resize*/
+@media screen and (max-width: 740px) {
+  #content {
+    flex-direction: column-reverse;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+/*Contact styling*/
+.contact h2 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  padding-top: 30px;
+}
+
+/* Contact button styling*/
+.contact .buttonFB {
+  background-color: #4267B2;
+}
+
+.contact .buttonInsta {
+  background-color: #F56040;
+}
+
+.contact .buttonLink {
+  background-color: #1DA1F2;
+}
+
+.contact button {
+  margin-top: 10px;
+  font-family: founders-grotesk-bold, serif;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  background-color: #476347;
+  border: none;
+  width: 100%;
+  height: 40px;
+}
+
+/* Search bar styling*/
+.search input {
+  float: left;
+}
+
+input.searchField {
+  width: 70%;
+  float: left;
+}
+
+input.searchButton {
+  width: auto;
+  align-content: center;
+}
+
+.search h2 {
+  margin-bottom: 10px;
+}
