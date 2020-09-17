@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/* Main Content */
+#content {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sub content*/
+#content > article {
+  flex: 1;
+}
+#content > nav{
+  flex: 0 0 20vw;
+  background-color: #f7f6f0;
+  order: -1;
+}
+
+header, article, nav {
+  padding: 1em;
+}
+
+header {
+  background-color: #f5efe4;
+  height: 9vh;
+  text-align: center;
+}
