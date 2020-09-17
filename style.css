@@ -21,19 +21,25 @@ body {
 #content {
   display: flex;
   min-height: 100vh;
+  margin-right: 70px;
+  margin-left: 70px;
+  justify-content: center;
 }
 
 /* Sub content*/
 #content > article {
-  flex: 1;
-  background-color: #f7f6f0;
-  border-radius: 30px;
-  margin-top: 15px;
+  align-content: center;
+  border-radius: 20px;
+  margin: 10px 10px 0;
+  padding: 0 4px;
 }
 
 #content > aside {
   flex: 0 0 20vw;
   order: -1;
+  background-color: #ededed;
+  border-radius: 20px;
+  margin: 10px 10px 0;
 }
 
 header, article, aside {
@@ -41,24 +47,27 @@ header, article, aside {
 }
 
 header {
-  background-color: #f5efe4;
+  background-color: #476347;
   height: 9vh;
   text-align: center;
 }
 
 .mainHouseImg img {
-  height: 40vw;
-  width: auto;
+  height: auto;
+  width: 100%;
   align-content: center;
-  border-radius: 30px;
+  border-radius: 20px;
+
 }
 
-h1{
+
+
+h2{
   font-size: 35px;
   font-family: founders-grotesk-bold, serif;
 }
 
-h2{
+h1{
   font-size: 60px;
   font-family: founders-grotesk-bold, serif;
   margin-bottom: 0;
@@ -69,7 +78,20 @@ h3{
   font-family: founders-grotesk-regular-italic, serif;
 }
 
-.collection1{
-  padding-left: 3vw;
 
+.sideBar input{
+  font-family: founders-grotesk-regular-italic, serif;
+  border-radius: 10px;
+  padding-left: 30px;
+  width: 20vw;
+  height: 30px;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #content {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
