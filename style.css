@@ -32,14 +32,14 @@ body {
   border-radius: 20px;
   margin: 10px 10px 0;
   padding: 0 4px;
+  order: -1;
 }
 
 /*Side content*/
 #content > aside {
   /*margin-block-start: 0.83em;*/
   flex: 0 0 20vw;
-  order: -1;
-  background-color: #ededed;
+  background-color: #f5f5f5;
   border-radius: 20px;
   margin: 75px 10px 30px 10px;
 
@@ -103,7 +103,7 @@ h3 {
 /* Responsive Resize*/
 @media screen and (max-width: 740px) {
   #content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
   }
