@@ -1,3 +1,4 @@
+/* Custom Fonts*/
 @font-face {
   font-family: founders-grotesk-bold;
   src: url('assets/fonts/founders-grotesk-test-bold.woff') format('woff');
@@ -12,7 +13,6 @@
   font-style: italic;
 }
 
-
 body {
   margin: 0;
 }
@@ -26,7 +26,7 @@ body {
   justify-content: center;
 }
 
-/* Sub content*/
+/* Main content*/
 #content > article {
   align-content: center;
   border-radius: 20px;
@@ -34,13 +34,14 @@ body {
   padding: 0 4px;
 }
 
+/*Side content*/
 #content > aside {
   /*margin-block-start: 0.83em;*/
   flex: 0 0 20vw;
   order: -1;
   background-color: #ededed;
   border-radius: 20px;
-  margin: 75px  10px 0;
+  margin: 75px 10px 0;
 }
 
 header, article, aside {
@@ -54,21 +55,20 @@ header {
   align-content: center;
 }
 
-.mainHouseImg img {
+.homeImg img {
   height: auto;
   width: 100%;
   align-content: center;
   border-radius: 20px;
+  margin-bottom: 10px;
+}
 
-}
-header h2{
+header h2 {
   font-size: 30px;
+  color: white;
   font-family: founders-grotesk-bold, serif;
 }
-.sideBar h2 {
-  font-size: 3vw;
-  font-family: founders-grotesk-bold, serif;
-}
+
 
 h1 {
   font-size: 5vw;
@@ -81,16 +81,50 @@ h3 {
   font-family: founders-grotesk-regular-italic, serif;
 }
 
+/*Side bar styling*/
+.sideBar h2 {
+  font-size: 3vw;
+  font-family: founders-grotesk-bold, serif;
+}
 
 .sideBar input {
   font-family: founders-grotesk-regular-italic, serif;
   border-radius: 10px;
   font-size: 15px;
-  /*padding-left: 20px;*/
   width: 100%;
   border: none;
   height: 40px;
   margin-top: 0;
+}
+
+/* Responsive Resize*/
+@media screen and (max-width: 740px) {
+  #content {
+    flex-direction: column-reverse;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+
+/*Contact styling*/
+.contact h2 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  padding-top: 30px;
+}
+
+/* Contact button colour styling*/
+.contact .buttonFB {
+  background-color: #4267B2;
+}
+
+.contact .buttonInsta {
+  background-color: #F56040;
+}
+
+.contact .buttonTwit {
+  background-color: #1DA1F2;
 }
 
 .contact button {
@@ -105,50 +139,21 @@ h3 {
   height: 40px;
 }
 
-@media screen and (max-width: 600px) {
-  #content {
-    display: block;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-}
-
-.search h2  {
-  margin-bottom: 10px;
-}
-
-.contact h2  {
-  margin-top: 40px;
-  margin-bottom: 5px;
-  position: relative;
-
-}
-
-.contact .buttonFB {
-  background-color: #4267B2;
-}
-
-.contact .buttonInsta {
-  background-color: #F56040;
-}
-
-.contact .buttonTwit {
-  background-color: #1DA1F2;
-}
-
+/* Search bar styling*/
 .search input {
   float: left;
 }
 
-
-input.searchField{
+input.searchField {
   width: 70%;
-  /*align-content: center;*/
   float: left;
 }
-input.searchbutton{
+
+input.searchButton {
   width: auto;
   align-content: center;
-  /*float: left;*/
+}
+
+.search h2 {
+  margin-bottom: 10px;
 }
