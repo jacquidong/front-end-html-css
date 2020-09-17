@@ -23,7 +23,7 @@ I have also used a margin value around the whole of the content. The margin valu
 ### Additional Features
 In this FILM webpage, I have included the following elements:
 
-#####Sematic HTML
+##### Sematic HTML
 Sematic HTML clearly describes the meaning of the element to both the browser and the developer. Using these tags increases the readability of the code which is important for developers. Some examples I have used are
 
 ``<form>`` for the Search Bar input and LinkedIn clickable redirect button.
@@ -32,11 +32,11 @@ Sematic HTML clearly describes the meaning of the element to both the browser an
 
 ``<aside>`` for the side panel containing the search bar and contact buttons.
 
-#####Scalability
+##### Scalability
 I used the Flex Box CSS Layout which allows the webpage to be responsive and scalable. Using Flexbox allowed me to evenly distribute by elements on the page.
 
 Another element I used for a responsive layout was by using the ``@media`` tag in my CSS. This tag allowed me to specify a query which would apply CSS to the document if the media query width matched the device. 
 
-#####CSS
+##### CSS
 
 To style my webpage, I used CSS.
